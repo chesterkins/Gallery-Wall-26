@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery Wall #26</title>
+<link rel="stylesheet" type="text/css" href="assets/gw-26.css">
+</head>
+<body>
+<div class="main_container">
+	<div class="gw_26">
+		<div class="gw_26_wall">
+			<div class="gw_26_wall_area">
+				<div class="gw_26_wall_frames">
+
+					<!-- 4 sizes -->
+					<div class="gw_26_wall_frame_3_4_a">
+						<img src="assets/placeholder.jpg">
+					</div>
+					<div class="gw_26_wall_frame_3_4_b">
+						<img src="assets/placeholder.jpg">
+					</div>
+					<div class="gw_26_wall_frame_3_4_c">
+						<img src="assets/placeholder.jpg">
+					</div>
+					<div class="gw_26_wall_frame_3_4_d">
+						<img src="assets/placeholder.jpg">
+					</div>
+					<!-- 4 sizes end -->
+
+					<!-- 1 size -->
+					<div class="gw_26_wall_frame_1_1_a">
+						<img src="assets/placeholder.jpg">
+					</div>
+					<!-- 1 size end -->
+
+					<!-- 3 small frames -->
+					<div class="gw_26_wall_frame_2_3_a">
+						<img src="assets/placeholder.jpg">
+					</div>
+					<div class="gw_26_wall_frame_2_3_b">
+						<img src="assets/placeholder.jpg">
+					</div>
+					<div class="gw_26_wall_frame_2_3_c">
+						<img src="assets/placeholder.jpg">
+					</div>
+					<!-- 3 small frames end -->
+
+				</div> <!-- gw_26_wall_frames -->
+			</div> <!-- gw_26_wall_area --> 
+		</div> <!-- gw_26_wall -->
+
+		<div class="gw_26_options">
+
+			<div class="gw_26_note">
+				<span>Click a frame above to start</span>
+			</div> <!-- gw_26_note --> 
+
+			<div class="gw_26_options_row_1">
+
+				<!-- glass toggle -->
+				<div class="gw_26_options_row_1_col_1">
+
+					<!-- Regular Glass-->
+					<div class="gw_26_reg_glass">
+						<span>Regular Glass</span>
+					</div>
+
+					<!-- Toggle -->
+					<div class="gw_26_glass_toggle">
+						<input type="checkbox" name="gw_26_glass" id="gw_26_glass">
+						<label for="gw_26_glass">Glass Toggle</label>
+					</div>
+
+					<!-- Invisible Glass-->
+					<div class="gw_26_inv_glass">
+						<span>Invisible Glass</span>
+					</div>
+
+				</div> <!-- gw_26_options_row_1_col_1 -->
+				<!-- glass toggle end -->
+
+				<div class="gw_26_options_row_1_col_2">
+
+					<!-- Price -->
+					<div class="gw_26_price">
+						<span>600</span>
+					</div> <!-- gw_26_price -->
+
+					<!-- Add to cart button -->
+					<div class="gw_26_add_to_cart">
+						<button type="button">Add to cart</button>
+					</div> <!-- gw_26_add_to_cart -->
+
+				</div> <!-- gw_26_options_row_1_col_2 -->
+
+			</div> <!-- gw_26_options_row_1 *glass, price and add to cart-->
+
+			<div class="gw_26_options_row_2">
+				<div class="gw_26_options_frame_list">
+					<div class="gw_26_frame_a">
+						<input type="radio" name="gw_26_frame" id="gw_26_frame_a" tabindex="0">
+						<label for="gw_26_frame_a" class="label">
+							<img src="assets/placeholder_thumb_a.jpg">
+							<span>Black</span>
+						</label>
+					</div>
+					<div class="gw_26_frame_b">
+						<input type="radio" name="gw_26_frame" id="gw_26_frame_b" tabindex="0">
+						<label for="gw_26_frame_b" class="label">
+							<img src="assets/placeholder_thumb_b.jpg">
+							<span>Gold</span>
+						</label>
+					</div>
+					<div class="gw_26_frame_c">
+						<input type="radio" name="gw_26_frame" id="gw_26_frame_c" tabindex="0">
+						<label for="gw_26_frame_c" class="label">
+							<img src="assets/placeholder_thumb_c.jpg">
+							<span>Light Walnut</span>
+						</label>
+					</div>
+					<div class="gw_26_frame_d">
+						<input type="radio" name="gw_26_frame" id="gw_26_frame_d" tabindex="0">
+						<label for="gw_26_frame_d" class="label">
+							<img src="assets/placeholder_thumb_d.jpg">
+							<span>Silver</span>
+						</label>
+					</div>
+					<div class="gw_26_frame_e">
+						<input type="radio" name="gw_26_frame" id="gw_26_frame_e" tabindex="0">
+						<label for="gw_26_frame_e" class="label">
+							<img src="assets/placeholder_thumb_e.jpg">
+							<span>Nordic Oak</span>
+						</label>
+					</div>
+					<div class="gw_26_frame_f">
+						<input type="radio" name="gw_26_frame" id="gw_26_frame_f" tabindex="0">
+						<label for="gw_26_frame_f" class="label">
+							<img src="assets/placeholder_thumb_f.jpg">
+							<span>White</span>
+						</label>
+					</div>
+				</div> <!-- gw_26_options_frame_list -->
+			</div> <!-- gw_26_options_row_2 -->
+
+		</div> <!-- gw_26_options -->
+	</div> <!-- gw_26 -->
+</div> <!-- main_container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".gw_26_reg_glass span").on("click", function() {
+		$(".gw_26_glass_toggle input").prop("checked", false);
+	})
+	$(".gw_26_inv_glass span").on("click", function() {
+		$(".gw_26_glass_toggle input").prop("checked", true);
+	})
+})
+</script>
+</body>
+</html>
